@@ -2,7 +2,10 @@ import React, { useState } from 'react'
 
 const Counter = () => {
     const [value,setValue]= useState(0);
+    // let value = 0;
     const increment =()=>{
+        // ++value
+        console.log(value);
         setValue(value+1);
     }
     const decrement =()=>{
@@ -16,6 +19,7 @@ const Counter = () => {
     const mul5 = ()=>{
         setValue(value+5);
     }
+    
   return (
     <div className='flex justify-center items-center m-auto border-2 border-red-500 w-[50vw] h-[50vh]' >
     <div className='flex flex-col '>
